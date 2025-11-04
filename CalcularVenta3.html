@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/icono.png" type="image-png">
+</head>
+
+<body>
+    <header>
+        <h1>Ejercicios Basicos JS</h1>
+    </header>
+    <nav>
+        <h3>Calcular Venta Tablas</h3>
+    </nav>
+
+    <form id="formulario">
+
+        <label for="nombre">Nombre del producto:</label>
+        <input type="text" id="nombre" required>
+
+        <label for="valor">Valor unitario:</label>
+        <input type="number" id="valor" required>
+
+        <label for="cantidad">Cantidad:</label>
+        <input type="number" id="cantidad" required>
+
+        <button type="button" onclick="calcularVentaTabla()">Calcular Precio Total</button>
+    </form>
+
+    <table id="resultados" border="1" style="margin-top: 20px;">
+        <thead>
+            <tr>
+                <th>Subtotal</th>
+                <th>IVA</th>
+                <th>Descuento</th>
+                <th>Total a Pagar</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td id="subtotal">0</td>
+                <td id="iva">0</td>
+                <td id="descuento">0</td>
+                <td id="total">0</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

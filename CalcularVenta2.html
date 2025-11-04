@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/icono.png" type="image-png">
+</head>
+
+<body>
+    <header>
+        <h1>Ejercicios Básicos JS</h1>
+    </header>
+    <nav>
+        <h3>Calcular Ventas </h3>
+    </nav>
+
+    <form id="formulario">
+        <div id="formVenta">
+            <label for="nombre">Nombre del producto:</label>
+            <input type="text" id="nombre" required>
+
+            <label for="valor">Valor unitario:</label>
+            <input type="number" id="valor" min="0" required>
+
+            <label for="cantidad">Cantidad:</label>
+            <input type="number" id="cantidad" min="1" required>
+
+            <button type="button" onclick="calcularVenta()">Calcular Precio Total</button>
+        </div>
+
+        <div id="resultado" style="display: none;">
+            <label for="subtotal">Subtotal:</label>
+            <input type="number" id="subtotal" readonly>
+
+            <label for="iva">IVA (19%):</label>
+            <input type="number" id="iva" readonly>
+
+            <label for="descuento">Descuento:</label>
+            <input type="number" id="descuento" readonly>
+
+            <label for="total">Total a Pagar:</label>
+            <input type="number" id="total" readonly>
+        </div>
+    </form>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
